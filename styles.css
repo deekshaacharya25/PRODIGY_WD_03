@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"Raleway",sans-serif;
+   background-color: #d2c6ec;
+   box-sizing: border-box;
+}
+
+
+.userBox {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #484598,#9b7ce6);
+}
+input {
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    height: 30px;
+    font-family: Nunito Sans; 
+    font-style: italic;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+label {
+    color: #ffffff;
+    font-family: Nunito Sans; 
+    background:none;
+}
+header{
+    color:#ffffff;
+    background-color: #484598;
+    position: fixed;
+    width:100%;
+    height:4rem;
+    padding:20px 10px 10px 10px;
+    font-size: 2rem;
+}
+h1 {
+    color: #ffffff;
+    margin-bottom: 30px; 
+    font-family: 'Pacifico', sans-serif;
+    background: none;
+}
+#button1 {
+    background: #484598;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    font-family: Nunito Sans;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    color:#ffffff
+}
+#gameMode{
+    color:#484598;
+}
+.maincontainer, #abc {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* game design */
+nav {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    font-size: 27px;
+    background-color: #484598;
+    padding-left: 12px;
+    width: 100%;
+}
+li {
+    list-style-type: none; 
+    font-family: Nunito Sans; 
+    text-shadow: 0 0 2px black;
+    background-color: #484598;
+    color: #FFFFFF;
+}
+.gamecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+}
+span.boxtext {
+    background-color: #484598;
+}
+.info {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+.box {
+    border: 2px solid #8684b9;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #484598;
+    border-radius: 20px;
+    font-family: Quicksand;
+}
+.gameinfo {
+    margin-top: 50px;
+}
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br {
+    border-right: 0px;
+}
+.bl {
+    border-left: 0px;
+}
+.bt {
+    border-top: 0px;
+}
+.bb {
+    border-bottom: 0px;
+}
+button {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #8245a1;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    font-family: Nunito Sans;
+    font-size: 15px;
+    font-weight: 600;
+    color:#fff;
+}
+.info {
+    font-size: 22px;
+    font-family: Nunito Sans;
+    margin-bottom: 20px;
+    color:#484598;
+}
+#game {
+    display: none;
+}
+.lastline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 1100px) {
+    .gamecontainer {
+        flex-wrap: wrap;
+    }
+    .gameinfo {
+        margin-top: 34px;
+    }
+    .container {
+        grid-template-columns: repeat(3, 16vw);
+        grid-template-rows: repeat(3, 16vw);
+    }
+}
+@media screen and (max-width: 600px) {
+    .gamecontainer {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
+    }
+    li {
+        font-size: 20px;
+    }
+    .userBox {
+        width: 300px;
+    }
+}
+@media screen and (max-height: 650px) {
+    .gamecontainer {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .info {
+        font-size: 15px;
+    }
+    button {
+        height: 20px;
+        font-size: 10px;
+    }
+    .lastline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .userBox {
+        width: 250px;
+    }
+    #button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #reset {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-height: 1200px) {
+    .info {
+        font-size: 30px;
+    }
+    button {
+        height: 40px;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 2000px), (min-height: 1000px) {
+    .userBox {
+        height: 800px;
+        width: 800px;
+        gap: 50px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    label {
+        font-size: 30px;
+    }
+    input {
+        height: 50px;
+        font-size: 20px;
+    }
+    button {
+        height: 60px;
+        font-size: 30px;
+    }
+    .container {
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(3, 180px);
+    }
+    nav {
+        height: 130px;
+        font-size: 50px;
+    }
+    .gameinfo {
+        margin-top: 120px;
+    }
+    .info {
+        font-size: 50px;
+    }
+    .lastline {
+        margin-top: 20px;
+    }
+}

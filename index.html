@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Tic Tac Toe</header>
+    <div class="maincontainer" id="abc">
+        <div class="userBox">
+            <h1>Let's Begin!!</h1>
+            <label>Choose Game Mode:</label>
+            <select id="gameMode">
+                <option value="twoPlayers">Two Players</option>
+                <option value="singlePlayer">Single Player (vs AI)</option>
+            </select>
+            <label>Player I:</label>
+            <input type="text" id="inp1" placeholder="Player I name..." autofocus>
+            <label id="labelPlayer2">Player II:</label>
+            <input type="text" id="inp2" placeholder="Player II name...">
+            <button type="submit" id="button1">START</button>
+        </div>
+    </div>
+    <div id="game">
+        <nav>
+            <ul>
+                <li>Tic-Tac-Toe Game</li>
+            </ul>
+        </nav>
+        <div class="gamecontainer">
+            <div class="container">
+                <div class="box bt bl" id="s1"><span class="boxtext"></span></div>
+                <div class="box bt" id="s2"><span class="boxtext"></span></div>
+                <div class="box bt br" id="s3"><span class="boxtext"></span></div>
+                <div class="box bl" id="s4"><span class="boxtext"></span></div>
+                <div class="box" id="s5"><span class="boxtext"></span></div>
+                <div class="box br" id="s6"><span class="boxtext"></span></div>
+                <div class="box bl bb" id="s7"><span class="boxtext"></span></div>
+                <div class="box bb" id="s8"><span class="boxtext"></span></div>
+                <div class="box br bb" id="s9"><span class="boxtext"></span></div>
+            </div>
+            <div class="gameinfo">
+                <div class="lastline">
+                    <span class="info"></span>
+                    <span id="button">
+                        <button id="reset" class="btn">Restart</button>
+                        <button id="exit" class="btn">Exit</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
